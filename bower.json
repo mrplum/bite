@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "jquery": "latest",
-    "jquery-mobile-bower": "latest",
+    "jquery-mobile": "latest",
     "fastclick": "latest",
     "normalize-css": "latest"
   }
