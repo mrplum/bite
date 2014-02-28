@@ -1,0 +1,36 @@
+#menu-page{data: {role: 'page', theme: 'a'}}
+  %header{data: {role: 'header', position: 'fixed', tap_toggle: 'false'}}
+    = link_to '', '#', data: {role: 'none'}
+    %h1
+      %span.red> RED
+      %span CINETOOLS
+    = link_to '#settings-page', data: {role: 'button'} do
+      %i.icon-cogs
+  %section.menu-grid{data: {role: 'content'}}
+    = link_to '#crop-page', class: 'ui-btn float' do
+      .app-icon.crop
+      %p Crop Factor
+
+    = link_to '#recording-page', class: 'ui-btn float' do
+      .app-icon.recording
+      %p Recording Time
+
+    = link_to '#flicker-page', class: 'ui-btn float' do
+      .app-icon.flicker
+      %p Flicker-Free
+
+    = link_to '#depth-page', class: 'ui-btn float' do
+      .app-icon.depth
+      %p Depth of Field
+
+    = link_to '#exposure-page', class: 'ui-btn float' do
+      .app-icon.exposure
+      %p Exposure
+
+    = link_to '#panning-page', class: 'ui-btn float' do
+      .app-icon.panning
+      %p Panning Speed
+
+    = link_to 'http://www.red.com/learn', class: 'ui-btn block' do
+      .app-icon.web
+      %p Learn Online at RED.COM

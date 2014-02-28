@@ -1,7 +1,13 @@
 require 'cordova'
 
 after_configuration do
-  sprockets.append_path "#{root}/bower_components/"
+  puts "================================"
+  puts "#{root}"
+  sprockets.append_path File.join("#{root}", "/bower_components/")
+  sprockets.append_path File.join("#{root}", "/bower_components/jquery")
+  sprockets.append_path File.join("#{root}", "/bower_components/jquery-mobile")
+  sprockets.append_path File.join("#{root}", "/bower_components/jquery-mobile-bower")
+  puts "================================"
 end
 
 activate :cordova
