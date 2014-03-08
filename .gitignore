@@ -22,3 +22,11 @@
 # Ignore Gemfile
 Gemfile
 Gemfile.lock
+
+# Compile files
+www/css
+www/fonts
+www/js
+www/img
+www/index.html
+
