@@ -11,6 +11,7 @@ class Cordova < Middleman::Extension
       builder.run('rm -R www')
       builder.run('mv -f build www')
       builder.run('cordova prepare')
+      builder.run('cordova build')
     end
 
   end
