@@ -30,3 +30,5 @@ www/js
 www/img
 www/index.html
 
+# Platforms
+/platforms
