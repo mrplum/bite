@@ -1,56 +1,29 @@
-Middleman + Cordova
-===================
+Bite
+====
 
-A Middleman template for Apache Cordova 3.3.x. The goal of this project is to provide a clean and efficient workflow for hybrid mobile app development while remaining platform agnostic.
+A very useful tool to know what phone company belongs each of your friends.
 
-**middleman-cordova** is a [Middleman 3.1.x](http://middlemanapp.com) project template for [Apache Cordova 3.3.x](http://http://cordova.apache.org/) with [Haml](http://haml.info), [Sass](http://sass-lang.com), [CoffeeScript](http://coffeescript.org) and [Bower](http://bower.io/) for package management.
 
-### Requirements
-* [Node.js](http://nodejs.org/)
-* [Bower](http://bower.io/)
-* [Apache Cordova 3.3.x](http://cordova.apache.org/docs/en/3.3.0/)
+Licence
+=======
 
----
+The MIT License (MIT)
 
-### Getting Started
+Copyright (c) 2013 Ryan Lindsey
 
-1. Clone **middleman-cordova** into `~/.middleman`. You might need to create this directory if it doesn't exist.
-   ```bash
-   $ git clone git://github.com/pixelsonly/middleman-cordova.git ~/.middleman/middleman-cordova
-   ```
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
 
-2. Create a new Cordova project by running the *create* command,
-   [see docs for help](http://cordova.apache.org/docs/en/3.3.0/guide_cli_index.md.html#The%20Command-Line%20Interface):
-   ```bash
-   $ cordova create YourAppName com.example.app "MyAppName"
-   ```
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-3. Add a platform to your Cordova project, for example let's add iOS support.
-   ```bash
-   $ cd MyAppName
-   $ cordova platforms add ios
-   ```
-
-4. Setup Middleman
-   ```bash
-   $ middleman init middleman --template=middleman-cordova
-   ```
-
-5. Install Bower packages
-  ```bash
-  $ cd middleman
-  $ bower install
-  ```
-
-For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/) or feel free to hit me up on [Twitter](http://twitter.com/pixelsonly).
-
-### Usage
-
-**middleman-cordova** hooks into the Middleman build process, merges the compiled assets with the Cordova structure and runs the `cordova prepare` command.
-
-Run `$ middleman build` from the Middleman project directory.
-
----
-
-### Roadmap
-* Integrate Cordova merges into build process
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

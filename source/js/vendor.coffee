@@ -1,3 +1,3 @@
-#= require fastclick/lib/fastclick.js
-#= require jquery/jquery.js
-#= require js/jquery.mobile.js
+//= require vendor/jquery.js
+//= require vendor/jquery.mobile.js
+//= require vendor/fastclick.js

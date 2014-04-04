@@ -6,11 +6,11 @@
     %title= current_page.data.title || "Middleman + Cordova"
     = stylesheet_link_tag "vendor"
     = stylesheet_link_tag "application"
-    - if build?
-      %script{src: "cordova.js"}
+    -# if build?
+      / %script{src: "cordova.js"}
   %body{class: current_page.data.body_class || 'page'}
     = yield
     = javascript_include_tag "vendor"
     = javascript_include_tag "application"
     :javascript
-      app.initialize()
+      

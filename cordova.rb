@@ -7,11 +7,13 @@ class Cordova < Middleman::Extension
     app.set :images_dir,  'img'
 
     app.after_build do |builder|
-      builder.run('cp ../www/config.xml build')
-      builder.run('rm -R ../www')
-      builder.run('mv -f build ../www')
+      builder.run('cp www/config.xml build')
+      builder.run('rm -R www')
+      builder.run('mv -f build www')
       builder.run('cordova prepare')
+      builder.run('cordova build')
     end
+
   end
 end
 
